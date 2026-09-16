@@ -17,40 +17,57 @@ body {
 header {
     background: var(--primary-color);
     color: white;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
-nav {
-    margin-top: 0.5rem;
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: white;
 }
 
-nav data, nav a {
+header p {
+    margin: 5px 0 15px 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-weight: 600;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
-    color: var(--accent-color);
+    color: #93c5fd;
+    text-decoration: underline;
 }
 
 .container {
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 800px;
+    margin: 40px auto;
     background: white;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-h1, h2, h3 {
+h2 {
     color: var(--primary-color);
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 
-ul {
-    padding-left: 20px;
+p {
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -69,4 +86,9 @@ footer {
     text-decoration: none;
     margin-top: 15px;
     font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
 }
