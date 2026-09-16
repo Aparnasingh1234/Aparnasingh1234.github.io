@@ -1,0 +1,201 @@
+/* ---------- GENERAL STYLING ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #263238;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    background-color: #172554;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #93c5fd;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ---------- HERO SECTION ---------- */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+    display: inline-block;
+    margin: 25px 8px 0;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ---------- PAGE HEADER ---------- */
+
+.page-header {
+    background-color: #172554;
+    color: white;
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 38px;
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #172554;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid #2563eb;
+}
+
+.card h3 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #4b5563;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skill {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    padding: 10px 18px;
+    margin: 7px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* ---------- MOBILE DESIGN ---------- */
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+}
