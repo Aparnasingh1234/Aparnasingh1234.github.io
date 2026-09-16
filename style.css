@@ -1,222 +1,72 @@
-/* ---------- GENERAL STYLING ---------- */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #1e3a8a;
+    --bg-color: #f8fafc;
+    --text-color: #334155;
+    --accent-color: #3b82f6;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f9fc;
-    color: #263238;
-    line-height: 1.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
 }
-
-/* ---------- NAVIGATION ---------- */
 
 nav {
-    background-color: #172554;
+    margin-top: 0.5rem;
+}
+
+nav data, nav a {
     color: white;
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+nav a:hover {
+    color: var(--accent-color);
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 22px;
-    flex-wrap: wrap;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 14px;
-}
-
-nav ul li a:hover {
-    color: #93c5fd;
-}
-
-/* ---------- MAIN CONTAINER ---------- */
 
 .container {
-    width: 85%;
-    max-width: 1100px;
-    margin: auto;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* ---------- HERO SECTION ---------- */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
 
-.hero {
-    min-height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ul {
+    padding-left: 20px;
+}
+
+footer {
     text-align: center;
-    background: linear-gradient(135deg, #dbeafe, #f8fafc);
-    padding: 60px 20px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #64748b;
 }
-
-.hero h1 {
-    font-size: 52px;
-    color: #172554;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    font-size: 24px;
-    color: #2563eb;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 18px;
-}
-
-/* ---------- BUTTONS ---------- */
 
 .btn {
     display: inline-block;
-    margin: 25px 8px 0;
-    padding: 12px 24px;
-    background-color: #2563eb;
+    background: var(--accent-color);
     color: white;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #1d4ed8;
-}
-
-/* ---------- PAGE HEADER ---------- */
-
-.page-header {
-    background-color: #172554;
-    color: white;
-    padding: 55px 8%;
-    text-align: center;
-}
-
-.page-header h1 {
-    font-size: 38px;
-}
-
-/* ---------- SECTIONS ---------- */
-
-section {
-    padding: 60px 0;
-}
-
-.section-title {
-    text-align: center;
-    color: #172554;
-    margin-bottom: 35px;
-    font-size: 30px;
-}
-
-/* ---------- CARDS ---------- */
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: white;
-    padding: 28px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-    border-top: 4px solid #2563eb;
-}
-
-.card h3 {
-    color: #172554;
-    margin-bottom: 12px;
-}
-
-.card p {
-    color: #4b5563;
-}
-
-/* ---------- SKILLS ---------- */
-
-.skill {
-    display: inline-block;
-    background-color: #dbeafe;
-    color: #1e3a8a;
-    padding: 10px 18px;
-    margin: 7px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer {
-    background-color: #172554;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-}
-
-/* ---------- MOBILE DESIGN ---------- */
-
-@media (max-width: 600px) {
-    nav {
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero h2 {
-        font-size: 20px;
-    }
-
-    nav ul {
-        justify-content: center;
-        gap: 12px;
-    }
-}
-/* ---------- PROFILE PICTURE ---------- */
-
-.profile-pic {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    border: 5px solid white;
-    margin-bottom: 22px;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
-}
-}
-
-/* ---------- HERO CONTENT ---------- */
-
-.hero-content {
-    text-align: center;
-    max-width: 750px;
-    margin: auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 600;
 }
