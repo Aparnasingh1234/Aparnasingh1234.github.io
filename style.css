@@ -176,9 +176,8 @@ nav a:hover {
 }
 
 .passport-photo {
-    width: 170px;
-    height: 210px;
-
+    width: 150px;
+    height: 180px;
     object-fit: cover;
     object-position: center;
 
