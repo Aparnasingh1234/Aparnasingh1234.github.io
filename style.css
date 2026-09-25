@@ -4,7 +4,7 @@
     --border-color: #e6dfd5;
     --text-primary: #2c221e;
     --text-secondary: #70625b;
-    --accent-primary: #9c6644; /* Warm Mocha/Terracotta */
+    --accent-primary: #9c6644;
     --accent-hover: #7f5335;
     --shadow: 0 10px 30px -10px rgba(156, 102, 68, 0.08);
 }
@@ -28,7 +28,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header & Warm Intro */
 header {
     background: linear-gradient(135deg, #f7f0eb 0%, #ffffff 100%);
     border: 1px solid var(--border-color);
@@ -80,7 +79,6 @@ header {
     font-size: 0.98rem;
 }
 
-/* Navigation */
 nav {
     display: flex;
     gap: 2rem;
@@ -112,7 +110,6 @@ nav a.active::after {
     background-color: var(--accent-primary);
 }
 
-/* Sections & Cards */
 .section-title {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
@@ -156,7 +153,6 @@ nav a.active::after {
     margin-bottom: 1.5rem;
 }
 
-/* Color-Coded Tool Tags */
 .tags {
     display: flex;
     gap: 0.5rem;
@@ -172,14 +168,11 @@ nav a.active::after {
     letter-spacing: 0.3px;
 }
 
-/* Different classy colors for each tool/topic */
 .tag.python { background-color: #eef4ed; color: #386641; }
 .tag.sql { background-color: #fdf0ed; color: #bc4749; }
 .tag.orange { background-color: #fefae0; color: #dda15e; }
-.tag.r-lang { background-color: #f3e9dc; color: #582f0e; }
 .tag.econ { background-color: #faedcd; color: #7f4f24; }
 
-/* Buttons */
 .btn {
     display: inline-block;
     background-color: var(--accent-primary);
